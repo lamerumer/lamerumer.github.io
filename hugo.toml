@@ -12,6 +12,9 @@ tag = 'tags'
 avatar = 'img/megli.png'
 emoji = '❤️‍🔥'
 
+[params]
+favicon = 'img/megli-logo.png'
+
 [params.widgets]
 homepage = [
   { type = "search" },

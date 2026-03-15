@@ -72,6 +72,14 @@
     border-radius: 18px;
 }
 
+.article-list--compact .article-category span {
+    color: var(--accent-color-text);
+    padding: 8px 16px;
+    border-radius: var(--tag-border-radius);
+    display: inline-block;
+    font-size: 1.4rem;
+}
+
 .article-content {
     figure {
         margin: 2rem auto;
