@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://lamerumer.github.io/lamerumer-hugo-site/'
 defaultContentLanguage = 'ru'
 defaultContentLanguageInSubdir = false
 theme = 'stack'
