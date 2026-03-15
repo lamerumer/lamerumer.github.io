@@ -1,0 +1,96 @@
+baseURL = 'https://example.org/'
+defaultContentLanguage = 'ru'
+defaultContentLanguageInSubdir = false
+theme = 'stack'
+title = 'lamerumer'
+
+[taxonomies]
+category = 'categories'
+tag = 'tags'
+
+[params.sidebar]
+avatar = 'img/megli.png'
+emoji = '❤️‍🔥'
+
+[params.widgets]
+homepage = [
+  { type = "search" },
+  { type = "archives", params = { limit = 5 } },
+  { type = "categories", params = { limit = 10 } },
+  { type = "tag-cloud", params = { limit = 10 } }
+]
+page = [{ type = "toc" }]
+
+[params.colorScheme]
+toggle = true
+default = "dark"
+
+[[menu.social]]
+identifier = 'donationalerts'
+name = 'DonationAlerts'
+url = 'https://www.donationalerts.com/r/lamerumer'
+weight = 1
+
+[menu.social.params]
+icon = 'brand-donationalerts'
+
+[[menu.social]]
+identifier = 'telegram'
+name = 'Telegram'
+url = 'https://t.me/lamerumertgk'
+weight = 2
+
+[menu.social.params]
+icon = 'brand-telegram'
+
+[[menu.social]]
+identifier = 'twitch'
+name = 'Twitch'
+url = 'https://www.twitch.tv/lamerumer'
+weight = 3
+
+[menu.social.params]
+icon = 'brand-twitch'
+
+[[menu.social]]
+identifier = 'youtube'
+name = 'YouTube'
+url = 'https://www.youtube.com/@lamerumer'
+weight = 4
+
+[menu.social.params]
+icon = 'brand-youtube'
+
+[[menu.social]]
+identifier = 'twitter'
+name = 'Twitter'
+url = 'https://x.com/lamerumer'
+weight = 5
+
+[menu.social.params]
+icon = 'brand-twitter'
+
+[languages.en]
+languageCode = 'en-US'
+languageName = 'English'
+title = 'lamerumer'
+weight = 2
+
+[languages.en.params.sidebar]
+subtitle = 'Sysadmin, vibe coder, editor, streamer, blogger, philanthropist'
+
+[languages.ru]
+languageCode = 'ru-RU'
+languageName = 'Русский'
+title = 'lamerumer'
+weight = 1
+
+[languages.ru.params.sidebar]
+subtitle = 'Сисадмин, вайбкодер, монтажер, стример, блоггер, филантроп'
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[caches]
+  [caches.images]
+  dir = ':cacheDir/images'

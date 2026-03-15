@@ -1,0 +1,11 @@
+{{- $text := .Inner | strings.TrimSpace -}}
+<div class="copy-quote" role="button" tabindex="0" aria-label="Copy quote text">
+    <div class="copy-quote__body">
+        {{- $text | markdownify -}}
+    </div>
+    <div class="copy-quote__actions">
+        <button class="copy-quote__button" type="button">Скопировать</button>
+        <span class="copy-quote__status" aria-live="polite">Скопировано!</span>
+    </div>
+    <textarea class="copy-quote__source" hidden>{{- $text -}}</textarea>
+</div>
