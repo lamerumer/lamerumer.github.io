@@ -1,0 +1,23 @@
+{{- $siteTitle := .Site.Title -}}
+{{- $paginator := partial "helper/paginator.html" . -}}
+{{- $titleParts := slice -}}
+
+{{- if and $paginator $paginator.HasPrev -}}
+    {{- $titleParts = $titleParts | append (printf "Page %d" $paginator.PageNumber) -}}
+{{- end -}}
+
+{{- $pageTitle := .Title -}}
+{{- if .IsHome -}}
+    {{- if eq .Site.Language.Lang "ru" -}}
+        {{- $pageTitle = "Главная" -}}
+    {{- else -}}
+        {{- $pageTitle = "Home" -}}
+    {{- end -}}
+{{- end -}}
+
+{{- if $pageTitle -}}
+    {{- $titleParts = $titleParts | append $pageTitle -}}
+{{- end -}}
+{{- $titleParts = $titleParts | append $siteTitle -}}
+
+{{ return delimit $titleParts " | " }}
