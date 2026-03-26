@@ -26,6 +26,10 @@
         {{ partial "article/components/links" . }}
     {{ end }}
 
+    {{ if .Params.pcSpecs }}
+        {{ partial "article/components/pc-specs" . }}
+    {{ end }}
+
     {{ partial "article/components/related-content" . }}
      
     {{ if not (eq .Params.comments false) }}

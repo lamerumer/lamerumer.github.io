@@ -80,6 +80,143 @@
     font-size: 1.4rem;
 }
 
+.section-title--compact {
+    margin: 2.8rem 0 1.2rem;
+    font-size: 2.2rem;
+}
+
+.pc-specs-block {
+    background: var(--card-background);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--shadow-l1);
+    padding: var(--card-padding);
+}
+
+.pc-specs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.pc-specs-column {
+    min-width: 0;
+}
+
+.pc-specs-block__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+.pc-specs-block__subtitle {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.pc-specs-block__content {
+    flex: 1;
+    min-width: 0;
+}
+
+.pc-specs-block__list {
+    margin: 0;
+}
+
+.pc-specs-block__item + .pc-specs-block__item {
+    margin-top: 10px;
+}
+
+.pc-specs-block__label {
+    font-weight: 700;
+    color: var(--card-text-color-main);
+}
+
+.pc-specs-block__value {
+    color: var(--card-text-color-secondary);
+}
+
+.pc-specs-block__icon {
+    width: 72px;
+    min-width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    background: rgba(0, 0, 0, 0.04);
+    color: var(--accent-color);
+}
+
+.pc-specs-block__icon svg {
+    width: 36px;
+    height: 36px;
+}
+
+.devices {
+    margin-top: 2rem;
+}
+
+.devices article > .device-row {
+    display: flex;
+    align-items: center;
+    padding: var(--small-card-padding);
+    gap: 20px;
+}
+
+.devices .article-details {
+    min-width: 0;
+    flex-grow: 1;
+    padding: 0;
+    min-height: var(--article-compact-image-size);
+}
+
+.devices .article-title {
+    margin-bottom: 8px;
+}
+
+.devices .article-meta {
+    color: var(--card-text-color-secondary);
+}
+
+.devices .article-meta > :first-child {
+    margin-top: 0;
+}
+
+.devices .article-meta > :last-child {
+    margin-bottom: 0;
+}
+
+.devices .article-meta ul,
+.devices .article-meta ol {
+    margin: 0;
+    padding-left: 1.2em;
+}
+
+.devices .article-meta li + li {
+    margin-top: 4px;
+}
+
+.devices .article-image--logo {
+    width: 72px;
+    height: 72px;
+    min-width: 72px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.04);
+    color: var(--accent-color);
+}
+
+.devices .article-image--logo svg {
+    width: 36px;
+    height: 36px;
+}
+
 .article-content {
     figure {
         margin: 2rem auto;
@@ -167,6 +304,23 @@
 }
 
 @media (max-width: 640px) {
+    .pc-specs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pc-specs-block {
+        gap: 18px;
+    }
+
+    .pc-specs-block__label {
+        min-width: 0;
+        margin-right: 8px;
+    }
+
+    .devices article > .device-row {
+        align-items: flex-start;
+    }
+
     .article-content figure {
         padding: 0 12px;
     }
