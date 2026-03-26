@@ -3,8 +3,8 @@ title: About
 date: 2026-03-15
 lastmod: 2026-03-15
 comments: false
-pcSpecsTitle: My PC specs
-pcSpecsColumnTitle: Hardware
+pcSpecsTitle: Setup
+pcSpecsColumnTitle: PC
 peripheralsTitle: Peripherals
 linksTitle: My resources
 pcSpecs:

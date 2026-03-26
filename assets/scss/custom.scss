@@ -57,7 +57,7 @@
     justify-content: center;
     border-radius: 18px;
     overflow: hidden;
-    background: rgba(0, 0, 0, 0.04);
+    background: transparent;
 }
 
 .links .article-image--logo img {
@@ -113,6 +113,7 @@
 .pc-specs-block__subtitle {
     margin: 0;
     font-size: 2rem;
+    color: var(--card-text-color-main);
 }
 
 .pc-specs-block__content {

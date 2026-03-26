@@ -3,8 +3,8 @@ title: Обо мне
 date: 2026-03-15
 lastmod: 2026-03-15
 comments: false
-pcSpecsTitle: Мое железо
-pcSpecsColumnTitle: Железо
+pcSpecsTitle: Сетапчик
+pcSpecsColumnTitle: ПК
 peripheralsTitle: Периферия
 linksTitle: Мои ресурсы
 pcSpecs:
