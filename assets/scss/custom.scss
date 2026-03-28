@@ -85,6 +85,10 @@
     font-size: 2.2rem;
 }
 
+h2.section-title--compact[id] {
+    scroll-margin-top: 24px;
+}
+
 .pc-specs-block {
     background: var(--card-background);
     border-radius: var(--card-border-radius);
