@@ -1,0 +1,36 @@
+{{- $cfg := .Site.Params.twitchEmbed -}}
+{{- $data := .Site.Data.twitch -}}
+{{- if and $cfg.enabled $data.available -}}
+    {{- $isRU := eq .Site.Language.Lang "ru" -}}
+    {{- $parents := slice -}}
+    {{- range $cfg.parentDomains -}}
+        {{- $parents = $parents | append (printf "parent=%s" (. | urlquery)) -}}
+    {{- end -}}
+    {{- $baseQuery := delimit $parents "&" -}}
+    {{- $src := "" -}}
+    {{- if $data.isLive -}}
+        {{- $src = printf "https://player.twitch.tv/?channel=%s&%s&autoplay=false&muted=true" ($data.channelLogin | urlquery) $baseQuery -}}
+    {{- else if $data.videoId -}}
+        {{- $src = printf "https://player.twitch.tv/?video=v%s&%s&autoplay=false&muted=true" ($data.videoId | urlquery) $baseQuery -}}
+    {{- end -}}
+
+    {{- if $src -}}
+        <section class="twitch-hero article-list">
+            <article class="twitch-hero__card">
+                <div class="twitch-hero__body">
+                    <div class="twitch-hero__meta">
+                        <div class="twitch-hero__player-wrap">
+                            <iframe
+                                class="twitch-hero__player"
+                                src="{{ $src }}"
+                                title="Twitch player"
+                                allowfullscreen
+                                scrolling="no">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    {{- end -}}
+{{- end -}}

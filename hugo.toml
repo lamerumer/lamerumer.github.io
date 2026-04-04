@@ -16,6 +16,13 @@ emoji = '❤️‍🔥'
 favicon = 'img/megli-logo.png'
 yandexMetrika = '107736702'
 
+[params.twitchEmbed]
+enabled = true
+channel = 'lamerumer'
+title_ru = 'Твич'
+title_en = 'Twitch'
+parentDomains = ['lamerumer.ru', 'www.lamerumer.ru', 'lamerumer.github.io', 'localhost', '127.0.0.1']
+
 [params.widgets]
 homepage = [
   { type = "search" },

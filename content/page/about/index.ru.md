@@ -13,9 +13,9 @@ pcSpecs:
   - label: Процессор
     value: Ryzen 5 5600X
   - label: Видеокарта
-    value: Nvidia 1660 Super
+    value: ASUS GeForce RTX 5070 Prime
   - label: Оперативная память
-    value: 32GB
+    value: XPG GAMMING D10 32GB
 peripherals:
   - label: Клавиатура
     value: Redragon Eisa Pro (Brown Switch)

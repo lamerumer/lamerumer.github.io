@@ -13,7 +13,7 @@ pcSpecs:
   - label: CPU
     value: Ryzen 5 5600X
   - label: GPU
-    value: Nvidia 1660 Super
+    value: ASUS GeForce RTX 5070 Prime
   - label: RAM
     value: 32GB
 peripherals:
