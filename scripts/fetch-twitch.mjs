@@ -57,7 +57,7 @@ async function helix(path, accessToken) {
 
 async function main() {
   if (!clientId || !clientSecret || !channelLogin) {
-    await writeOutput(fallbackPayload({ reason: 'missing_env' }));
+    console.log('Twitch secrets are missing, keeping existing data/twitch.json');
     return;
   }
 
